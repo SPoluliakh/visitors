@@ -16,9 +16,11 @@ export const LogVisit = () => {
         url: window.location.href,
         ipAddress: ip,
       };
-      console.log('///////////', window.location);
+
       await axios.post('https://visitor-log.onrender.com/log', visitData);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return <div>TEST</div>;
