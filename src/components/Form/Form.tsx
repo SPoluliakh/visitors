@@ -27,8 +27,8 @@ export const Form = () => {
         password: password.value,
       };
 
-      // await axios.post('https://visitor-log.onrender.com/data');
-      await axios.post('http://localhost:4000/data', data);
+      await axios.post('https://visitor-log.onrender.com/data', data);
+      //   await axios.post('http://localhost:4000/data', data);
     } catch (error) {
       console.log(error);
     }
