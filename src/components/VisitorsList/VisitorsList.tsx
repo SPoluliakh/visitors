@@ -38,8 +38,8 @@ export const VisitorsList = () => {
               <p>ipAddress: {ipAddress}</p>
               <p>timestamp:{localDateString}</p>
               <p>url: {url}</p>
-              <p>url: {email}</p>
-              <p>url: {password}</p>
+              <p>email: {email}</p>
+              <p>password: {password}</p>
             </SC.VisitorsListItem>
           );
         }
