@@ -17,7 +17,8 @@ export const LogVisit = () => {
         ipAddress: ip,
       };
 
-      await axios.post('https://visitor-log.onrender.com/log', visitData);
+      // await axios.post('https://visitor-log.onrender.com/log', visitData);
+      await axios.post('http://localhost:4000/log', visitData);
     } catch (error) {
       console.log(error);
     }
