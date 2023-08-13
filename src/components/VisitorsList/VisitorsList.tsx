@@ -3,7 +3,7 @@ import axios from 'axios';
 import * as SC from './Visitors.styled';
 
 interface IVisitors {
-  country: string;
+  country: any;
   createdAt: string;
   ipAddress: string;
   timestamp: string;
@@ -33,8 +33,18 @@ export const VisitorsList = () => {
           const date = new Date(+timestamp);
           var localDateString = date.toLocaleString();
           return (
-            <SC.VisitorsListItem>
-              <p>country: {country}</p>
+            <SC.VisitorsListItem key={timestamp}>
+              <p>continent_name: {country.continent_name}</p>
+              <p>country_code: {country.country_code}</p>
+              <p>country_name: {country.country_name}</p>
+              <p>region_code: {country.region_code}</p>
+              <p>region_name: {country.region_name}</p>
+              <p>city: {country.city}</p>
+              <p>zip: {country.zip}</p>
+              <p>latitude: {country.latitude}</p>
+              <p>longitude: {country.longitude}</p>
+              <p>city: {country.city}</p>
+
               <p>ipAddress: {ipAddress}</p>
               <p>timestamp:{localDateString}</p>
               <p>url: {url}</p>
