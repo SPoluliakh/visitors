@@ -44,7 +44,6 @@ export const VisitorsList = () => {
               <p>latitude: {country.latitude}</p>
               <p>longitude: {country.longitude}</p>
               <p>city: {country.city}</p>
-
               <p>ipAddress: {ipAddress}</p>
               <p>timestamp:{localDateString}</p>
               <p>url: {url}</p>
