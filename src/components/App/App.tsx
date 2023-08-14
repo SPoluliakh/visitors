@@ -12,10 +12,10 @@ export const App = () => {
 
   return (
     <>
-      <LogVisit />
-      <button onClick={handleVisit} type="button">
+      {/* <LogVisit /> */}
+      {/* <button onClick={handleVisit} type="button">
         visit
-      </button>
+      </button> */}
       <Form />
 
       {visit && <VisitorsList />}
